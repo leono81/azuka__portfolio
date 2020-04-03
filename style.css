@@ -1,74 +1,101 @@
-body{
-    margin: 0;
+body {
+    font-family: 'Lato', sans-serif;
 }
 
-.header{
+figure.gallery__section {
+    margin: 0 0 20px 0;
+}
+
+#menuWrapper {
     display: flex;
-    width: auto;
-    height: 20vh;
-    background-color: #06cfc5;
+    width: 100%;
+    margin: 50px auto;
     justify-content: center;
-    align-items: center;
+    padding: 0;
+    list-style-type: none;
 }
 
-header h1{
-    margin: 0;
-    font-family: Arial, Helvetica, sans-serif;
-    color: #f5f5f5;
-}
-.container{
-    margin:10px;
-    padding:10px;
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(350px,1fr));
-    column-gap: 10px;
-    row-gap: 10px;
-    justify-content: center;
-    
+
+#menuWrapper a {
+    text-decoration: none;
+    margin: 0 10px;
+    color: black;
+    font-size: 20px;
 }
 
-.item{
+#menuWrapper a:hover {
+    text-decoration:underline;
+}
+
+#logo {
+    position: sticky;
+    top: 80px;
+    left: 20px;
+    margin: 10px;
+    width: 30px;
+    border: solid 1px black;
+    text-align: center;
+}
+
+
+
+#gallery {
+    margin: 0 auto 10px;
+    width:90%;
+    column-count: 3;
+}
+
+
+.gallery__section {
+    width: 360px;
+    height: auto;
+    position: relative;
     overflow: hidden;
 }
 
-.item img{
+.gallery__section  img{
+    width: inherit;
+    position:relative;
+    display:inline-block;
+    text-align:center;
+}
+
+.gallery__section--texto {
+    position: absolute;
+    top: 0px;
     width: 100%;
-    transition: all 1s ease-in-out;
+    height: 99.5%;
+    background: rgba(115,115,115,0.8);
+    opacity: 0;
+    transition: 300ms all;
 }
 
-.item img:hover{
-    transform: scale(1.1);
+.gallery__section--texto figcaption {
+    position: relative;
+    top: 50%;
+    text-align: center;
+    color: white;
 }
 
-.level1{
-    grid-row-end: span 4;
+.gallery__section:hover .gallery__section--texto {
+    opacity: 1;
 }
 
-.level2{
-    grid-row-end: span 8;
+#infoContainer {
+    display: grid;
+    width: 80%;
+    margin: 0 10%;
+    grid-template-columns: 1fr 1fr;
 }
 
-.level3{
-    grid-row-end: span 12;
+#infoContainer h3 {
+    font-weight: 400;
+    font-size: 15px;
+    width: 350px;
+    line-height: 35px;
+    margin: 0;
 }
 
-.level4{
-    grid-row-end: span 7;
-}
-
-.level5{
-    grid-row-end: span 6;
-}
-
-.footer{
-    display: flex;
-    width: auto;
-    height: 20vh;
-    background-color: #06cfc5;
-    justify-content: center;
-    align-items: center;
-}
-
-.footer h2{
-    color:whitesmoke;
+#infoContainer img {
+    width: 550px;
 }
