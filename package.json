@@ -1,0 +1,27 @@
+{
+  "name": "portfolioandrea",
+  "version": "1.0.0",
+  "description": "e-shop para la diseñadora Azuka",
+  "main": "index.js",
+  "dependencies": {
+    "live-server": "^1.2.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "start": "live-server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/leono81/azuka__portfolio.git"
+  },
+  "keywords": [
+    "e-shop",
+    "Azuka"
+  ],
+  "author": "Leandro Terrado (lterrado@gmail.com)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/leono81/azuka__portfolio/issues"
+  },
+  "homepage": "https://github.com/leono81/azuka__portfolio#readme"
+}
