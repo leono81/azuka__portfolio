@@ -36,7 +36,6 @@ figure.gallery__section {
 }
 
 
-
 #gallery {
     column-count: 3;
     column-gap: 10px;
@@ -81,24 +80,6 @@ figure.gallery__section {
     opacity: 1;
 }
 
-#infoContainer {
-    display: grid;
-    width: 80%;
-    margin: 0 10%;
-    grid-template-columns: 1fr 1fr;
-}
-
-#infoContainer h3 {
-    font-weight: 400;
-    font-size: 15px;
-    width: 350px;
-    line-height: 35px;
-    margin: 0;
-}
-
-#infoContainer img {
-    width: 550px;
-}
 
 @media screen and (max-width:1024px){
     #logo {

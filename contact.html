@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="contact.css">  
     <title>Document</title>
 </head>
@@ -11,6 +12,7 @@
     <header>
         <ul id="menuWrapper">
             <li><a href="index.html">WORKS</a></li>
+            <li><a href="about.html">ABOUT</a></li>
             <li><a href="contact.html">CONTACT</a></li>
             <li><a href="">SHOP</a></li>
         </ul>
@@ -18,8 +20,15 @@
 
     <main id="contact__wrapper">
         <img src="./img/caracoles.png" alt="">
-        <form action="">
-
+        <form action="" id="form__wrapper">
+            <div class="name__wrapper">
+                <input type="input" name="" id="name" placeholder="Insert Name...">
+                <input type="input" name="" id="lastname" placeholder="Insert Last Name...">
+            </div>
+            <input type="input" name="" id="email" placeholder="Insert your email..."><br>
+            <input type="input" name="" id="subject" placeholder="Insert subject..."><br>
+            <textarea name="message" rows="10" cols="30" >Message...</textarea><br>
+            <button>SUBMIT</button>
         </form>
     </main>
     
