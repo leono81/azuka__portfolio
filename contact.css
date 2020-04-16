@@ -4,11 +4,11 @@ body {
 
 input {
     margin-bottom: 20px;
-    height: 30px;
+    height: 40px;
     padding-left: 5px;
     background: #fafafa;
     border: 1px solid #ccc;
-
+    font-size: 20px;
 }
 
 #menuWrapper {
@@ -25,7 +25,7 @@ input {
     text-decoration: none;
     margin: 0 10px;
     color: black;
-    font-size: 20px;
+    font-size: 30px;
 }
 
 #menuWrapper a:hover {
@@ -36,9 +36,9 @@ input {
     display: flex;
     justify-content: center;
     align-items:flex-start;
-    margin-top: 50px;
+    margin-top: 120px;
     flex-wrap: wrap;
-}
+}   
 
 #contact__wrapper img{
     height: 78vh;
@@ -46,13 +46,15 @@ input {
 
 #form__wrapper {
     margin-left: 20px;
-    width: 500px;
+    width: 590px;
 }
 
-.name__wrapper {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
+#name {
+    width: 98.5%;
+}
+
+#lastname {
+    width: 98.5%;
 }
 
 #email {
@@ -73,7 +75,8 @@ textarea {
     background: #fafafa;
     border: 1px solid #ccc;
     padding: 5px ;
-    color:rgb(95, 95, 95)
+    color:rgb(95, 95, 95);
+    font-size: 20px;
 }
 
 button {
@@ -82,14 +85,50 @@ button {
     border: 1px solid rgb(0,0,0);
     color: rgb(255,255,255);
     padding: 5px;
-    font-size: 15px;
-    width: 100px;
+    font-size: 20px;
+    width: 150px;
 }
 
-@media screen and (max-width:501px){
+button:hover {
+    background-color: #9edbc5;
+}
+
+@media screen and (max-width:1367px){
     
     #menuWrapper a {
+        font-size: 20px;
+    }
 
+    input {
+        height: 30px;
+        font-size: 10px;
+    }
+
+    #contact__wrapper {
+
+        margin-top: 50px;
+
+    }  
+
+
+    #form__wrapper {
+        margin-left: 20px;
+        width: 387px;
+    }
+
+    textarea {
+        font-size: 10px;
+    }
+    
+    button {
+        font-size: 10px;
+        width: 100px;
+    }
+}
+
+@media screen and (max-width:801px){
+    
+    #menuWrapper a {
         font-size: 12px;
     }
 
@@ -99,16 +138,16 @@ button {
     }
 
     #form__wrapper {
-        margin-left: 0;
+        margin: 20px 0 0;
         width: 90%;
     }
     
     #name {
-        width: 100%;
+        width: 97.5%;
     }
 
     #lastname {
-        width: 100%;
+        width: 97.5%;
     }
     
 
@@ -127,5 +166,9 @@ button {
     textarea {
         width: 96.5%;
 
+    }
+
+    button {
+        width: 100%s;
     }
 }

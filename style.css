@@ -20,7 +20,7 @@ figure.gallery__section {
     text-decoration: none;
     margin: 0 10px;
     color: black;
-    font-size: 20px;
+    font-size: 30px;
 }
 
 #menuWrapper a:hover {
@@ -29,24 +29,24 @@ figure.gallery__section {
 
 #logo {
     position: fixed;
-    margin-left: 28px;
-    width: 48.4px;
-    height: 149.5px;
+    margin-left: 43px;
+    width: 78.5px;
+    height: 210.6px;
     text-align: center;
 }
 
 
 #gallery {
     column-count: 3;
-    column-gap: 10px;
+    column-gap: 20px;
     position: absolute;
-    left: 136px;
-    margin-top: 160px
+    left: 180.7px;
+    margin-top: 220px
 }
 
 
 .gallery__section {
-    width: 358.8px;
+    width: 506.2px;
     height: auto;
     position: relative;
     overflow: hidden;
@@ -81,7 +81,32 @@ figure.gallery__section {
 }
 
 
-@media screen and (max-width:1024px){
+@media screen and (max-width:1370px){
+    
+    #menuWrapper a {
+        font-size: 20px;
+    }
+
+    #gallery {
+        left: 136px;
+        margin-top: 160px
+    }
+    
+    
+    .gallery__section {
+        width: 358.8px;
+    }
+
+    #logo {
+        margin-left: 28px;
+        width: 48.4px;
+        height: 149.5px;
+    }
+
+}
+
+
+@media screen and (max-width:1025px){
     #logo {
         margin-left: 28px;
         width: 36.5px;
