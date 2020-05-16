@@ -1,174 +1,158 @@
 body {
-    font-family: 'Lato', sans-serif;
+  font-family: "Lato", sans-serif;
 }
 
 figure.gallery__section {
-    margin: 0 0 20px 0;
+  margin: 0 0 20px 0;
 }
 
 #menuWrapper {
-    display: flex;
-    width: 100%;
-    margin: 50px auto 0;
-    justify-content: center;
-    padding: 0;
-    list-style-type: none;
+  display: flex;
+  width: 100%;
+  margin: 50px auto 0;
+  justify-content: center;
+  padding: 0;
+  list-style-type: none;
 }
 
-
 #menuWrapper a {
-    text-decoration: none;
-    margin: 0 10px;
-    color: black;
-    font-size: 30px;
+  text-decoration: none;
+  margin: 0 10px;
+  color: black;
+  font-size: 30px;
 }
 
 #menuWrapper a:hover {
-    text-decoration:underline;
+  text-decoration: underline;
 }
 
 #logo {
-    position: fixed;
-    margin-left: 43px;
-    width: 78.5px;
-    height: 210.6px;
-    text-align: center;
+  position: fixed;
+  margin-left: 2%;
+  width: 78.5px;
+  height: 210.6px;
+  text-align: center;
 }
-
 
 #gallery {
-    column-count: 3;
-    column-gap: 20px;
-    position: absolute;
-    left: 180.7px;
-    margin-top: 220px
+  column-count: 3;
+  column-gap: 20px;
+  position: absolute;
+  left: 10%;
+  margin-top: 220px;
 }
-
 
 .gallery__section {
-    width: 506.2px;
-    height: auto;
-    position: relative;
-    overflow: hidden;
+  width: 506.2px;
+  height: auto;
+  position: relative;
+  overflow: hidden;
 }
 
-.gallery__section  img{
-    width: inherit;
-    position:relative;
-    display:inline-block;
-    text-align:center;
+.gallery__section img {
+  width: inherit;
+  position: relative;
+  display: inline-block;
+  text-align: center;
 }
 
 .gallery__section--texto {
-    position: absolute;
-    top: 0px;
-    width: 100%;
-    height: 99.5%;
-    background: rgba(115,115,115,0.8);
-    opacity: 0;
-    transition: 300ms all;
+  position: absolute;
+  top: 0px;
+  width: 100%;
+  height: 99.5%;
+  background: rgba(115, 115, 115, 0.8);
+  opacity: 0;
+  transition: 300ms all;
 }
 
 .gallery__section--texto figcaption {
-    position: relative;
-    top: 50%;
-    text-align: center;
-    color: white;
+  position: relative;
+  top: 50%;
+  text-align: center;
+  color: white;
 }
 
 .gallery__section:hover .gallery__section--texto {
-    opacity: 1;
+  opacity: 1;
 }
 
+@media screen and (max-width: 1370px) {
+  #menuWrapper a {
+    font-size: 20px;
+  }
 
-@media screen and (max-width:1370px){
-    
-    #menuWrapper a {
-        font-size: 20px;
-    }
+  #gallery {
+    margin-top: 160px;
+  }
 
-    #gallery {
-        left: 136px;
-        margin-top: 160px
-    }
-    
-    
-    .gallery__section {
-        width: 358.8px;
-    }
+  .gallery__section {
+    width: 358.8px;
+  }
 
-    #logo {
-        margin-left: 28px;
-        width: 48.4px;
-        height: 149.5px;
-    }
-
+  #logo {
+    width: 48.4px;
+    height: 149.5px;
+  }
 }
 
+@media screen and (max-width: 1025px) {
+  #logo {
+    width: 36.5px;
+    height: 112.5px;
+  }
 
-@media screen and (max-width:1025px){
-    #logo {
-        margin-left: 28px;
-        width: 36.5px;
-        height: 112.5px;
-    }
-    
+  #gallery {
+    column-gap: 10px;
+    margin-top: 120px;
+  }
 
-    #gallery {
-        column-gap: 10px;
-        left: 98.5px;
-        margin-top: 120px
-    }
-
-    .gallery__section {
-        width: 269.9px;
-    }
+  .gallery__section {
+    width: 269.9px;
+  }
 }
 
-@media screen and (max-width:800px){
-    #logo {
-        margin-left: 28px;
-        width: 36.5px;
-        height: 112.5px;
-    }
-    
+@media screen and (max-width: 800px) {
+  #logo {
+    width: 36.5px;
+    height: 112.5px;
+  }
 
-    #gallery {
-        column-count: 2;
-        column-gap: 10px;
-        left: 115.5px;
-        margin-top: 120px
-    }
+  #gallery {
+    column-count: 2;
+    column-gap: 10px;
+    margin-top: 120px;
+  }
 
-    .gallery__section {
-        width: 269.9px;
-    }
+  .gallery__section {
+    width: 269.9px;
+  }
 }
 
-@media screen and (max-width:480px){
-    #menuWrapper a {
-        font-size: 12px;
-    }
-    
-    #logo {
-        margin-left: 14px;
-        margin-top: -120px;
-    }
-    
+@media screen and (max-width: 480px) {
+  #menuWrapper a {
+    font-size: 12px;
+  }
 
-    #gallery {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        position: relative;
-        left:0;
-    }
+  #logo {
+    margin-top: -120px;
+  }
 
-    .gallery__section {
-        width: 227.3px;
-    }
+  #gallery {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    left: 0;
+  }
+
+  .gallery__section {
+    width: 227.3px;
+  }
 }
 
-@media screen and (max-width:320px){
-
+@media screen and (max-width: 320px) {
+  .gallery__section {
+    width: 180px;
+  }
 }

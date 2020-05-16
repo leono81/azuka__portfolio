@@ -1,33 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="contact.css">  
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="contact.css" />
     <title>Document</title>
-</head>
-<body>
-
+  </head>
+  <body>
     <header>
-        <ul id="menuWrapper">
-            <li><a href="index.html">WORKS</a></li>
-            <li><a href="contact.html">CONTACT</a></li>
-            <li><a href="shop.html">SHOP</a></li>
-        </ul>
+      <ul id="menuWrapper">
+        <li><a href="index.html">WORKS</a></li>
+        <li><a href="contact.html">CONTACT</a></li>
+        <li><a href="shop.html">SHOP</a></li>
+      </ul>
     </header>
 
     <main id="contact__wrapper">
-        <img src="./img/caracoles.png" alt="">
-        <form action="" id="form__wrapper">
-            <input type="input" name="" id="name" placeholder="Insert Name..."><br>
-            <input type="input" name="" id="lastname" placeholder="Insert Last Name...">
-            <input type="input" name="" id="email" placeholder="Insert your email..."><br>
-            <input type="input" name="" id="subject" placeholder="Insert subject..."><br>
-            <textarea name="message" rows="10" cols="30" >Message...</textarea><br>
-            <button>SUBMIT</button>
-        </form>
+      <img src="./img/caracoles.png" alt="" />
+      <form action="" id="form__wrapper">
+        <input
+          type="input"
+          name=""
+          id="name"
+          placeholder="Name..."
+          required
+        /><br />
+        <input
+          type="input"
+          name=""
+          id="lastname"
+          placeholder="Last Name..."
+          required
+        />
+        <input
+          type="email"
+          name=""
+          id="email"
+          placeholder="Email..."
+          required
+        /><br />
+        <input
+          type="input"
+          name=""
+          id="subject"
+          placeholder="Insert subject..."
+          required
+        /><br />
+        <textarea
+          name="message"
+          rows="10"
+          cols="30"
+          placeholder="Message..."
+        ></textarea
+        ><br />
+        <button>SUBMIT</button>
+      </form>
     </main>
-    
-</body>
+  </body>
 </html>
